@@ -5,10 +5,7 @@ services:
     image: golang:1.9.6
     volumes:
       - .:/go
-  glide:image: instrumentisto/glide
-            volumes:
-              - .:/go
-            working_dir: /go
+  glide:
     image: instrumentisto/glide
     volumes:
       - .:/go
