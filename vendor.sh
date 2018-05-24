@@ -14,35 +14,35 @@ EOS
 	    | awk '{CMD=$1; $1=""; printf "\t%-16s%s\n", CMD, $0}'
 }
 
-function glide() { #cmd docker-compose run glide {command}
+function glide() { #cmd docker-compose run --rm glide {command}
     docker-compose run --rm glide $@
 }
 
-function init() { #cmd docker-compose run glide init
+function init() { #cmd docker-compose run --rm glide init
     docker-compose run --rm glide init
 }
 
-function get() { #cmd docker-compose run glide get {url}
+function get() { #cmd docker-compose run --rm glide get {url}
     docker-compose run --rm glide get $@
 }
 
-function install() { #cmd docker-compose run glide install
+function install() { #cmd docker-compose run --rm glide install
     docker-compose run --rm glide install
 }
 
-function list() { #cmd docker-compose run glide list
+function list() { #cmd docker-compose run --rm glide list
     docker-compose run --rm glide list
 }
 
-function update() { #cmd docker-compose run glide update
+function update() { #cmd docker-compose run --rm glide update
     docker-compose run --rm glide update
 }
 
-function rebuild() { #cmd docker-compose run glide rebuild
+function rebuild() { #cmd docker-compose run --rm glide rebuild
     docker-compose run --rm glide rebuild
 }
 
-function help() { #cmd docker-compose run glide help
+function help() { #cmd docker-compose run --rm glide help
     docker-compose run --rm glide help
 }
 
