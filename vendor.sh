@@ -10,7 +10,7 @@ Usage:
 	$(basename $0) <Command> [args...]
 Command:
 EOS
-	egrep -o "^\s*function.*#cmd.*" $(basename $0) | sed "s/^[ \t]*function//" | sed "s/[ \t\(\)\{\}]*#cmd//" \
+	egrep -o "^\s*function.*#cmd.*" $(basename $0) | sed "s/^[ \t]*function//" | sed "s/[ \(\)\{\}]*#cmd//" \
 	    | awk '{CMD=$1; $1=""; printf "\t%-16s%s\n", CMD, $0}'
 }
 
