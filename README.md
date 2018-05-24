@@ -49,3 +49,44 @@ $ ./drive.sh installLinux {dir path OR ./...}
 $ ./drive.sh installWindow {dir path OR ./...}
 ```
 
+#### glide command
+```bash
+$ ./vendor.sh glide {command}
+```
+
+#### glide init command
+```bash
+$ ./vendor.sh init
+```
+
+#### glide get command
+```bash
+$ ./vendor.sh get {url}
+```
+
+#### glide install command
+```bash
+$ ./vendor.sh install
+```
+
+#### glide list command
+```bash
+$ ./vendor.sh list
+```
+
+#### glide update command
+```bash
+$ ./vendor.sh update
+```
+
+#### glide rebuild command
+```bash
+$ ./vendor.sh rebuild
+```
+
+#### glide help command
+```bash
+$ ./vendor.sh help
+```
+
+
