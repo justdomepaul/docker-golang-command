@@ -4,6 +4,9 @@ Thiis is a simple golang command by using docker to drive.
 ## Advantage
 If you have docker environment, you can run golang command, need not install any golang environment and package.
 
+## Version
+1.0.0
+
 ## Usages
 
 #### go command
