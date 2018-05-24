@@ -15,35 +15,35 @@ EOS
 }
 
 function glide() { #cmd docker-compose run glide {command}
-    docker-compose run glide $@
+    docker-compose run --rm glide $@
 }
 
 function init() { #cmd docker-compose run glide init
-    docker-compose run glide init
+    docker-compose run --rm glide init
 }
 
 function get() { #cmd docker-compose run glide get {url}
-    docker-compose run glide get $@
+    docker-compose run --rm glide get $@
 }
 
 function install() { #cmd docker-compose run glide install
-    docker-compose run glide install
+    docker-compose run --rm glide install
 }
 
 function list() { #cmd docker-compose run glide list
-    docker-compose run glide list
+    docker-compose run --rm glide list
 }
 
 function update() { #cmd docker-compose run glide update
-    docker-compose run glide update
+    docker-compose run --rm glide update
 }
 
 function rebuild() { #cmd docker-compose run glide rebuild
-    docker-compose run glide rebuild
+    docker-compose run --rm glide rebuild
 }
 
 function help() { #cmd docker-compose run glide help
-    docker-compose run glide help
+    docker-compose run --rm glide help
 }
 
 if [ $# -eq 0 ] ; then
