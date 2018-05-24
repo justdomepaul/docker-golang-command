@@ -89,4 +89,14 @@ $ ./vendor.sh rebuild
 $ ./vendor.sh help
 ```
 
+## Point
+
+#### set .env file
+1. change .env.example to .env
+2. add PROJECT_NAME in .env
+3. PROJECT_NAME is ./src/{project(include main.go) folder name}
+4. init glide
+```bash
+$ ./vendor.sh init
+```
 

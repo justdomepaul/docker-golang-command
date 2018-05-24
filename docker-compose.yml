@@ -8,5 +8,5 @@ services:
   glide:
     image: instrumentisto/glide
     volumes:
-      - .:/go
-    working_dir: /go
+      - ./src/${PROJECT_NAME}:/go/src/${PROJECT_NAME}
+    working_dir: /go/src/${PROJECT_NAME}
