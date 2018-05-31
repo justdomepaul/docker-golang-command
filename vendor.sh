@@ -23,7 +23,7 @@ function init() { #cmd docker-compose run --rm glide init
 }
 
 function get() { #cmd docker-compose run --rm glide get {url}
-    docker-compose run --rm glide get $@
+    docker-compose run --rm glide get --all-dependencies -s -v $@
 }
 
 function install() { #cmd docker-compose run --rm glide install
