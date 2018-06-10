@@ -11,82 +11,82 @@ If you have docker environment, you can run golang command, need not install any
 
 #### go command
 ```bash
-$ ./drive.sh go {your golang subcommand}
+$ ./drive.sh -e ./src/{project}/.env glide go {your golang subcommand}
 ```
 
 #### get command
 ```bash
-$ ./drive.sh get {packkage url}
+$ ./drive.sh -e ./src/{project}/.env glide get {packkage url}
 ```
 
 #### fmt command
 ```bash
-$ ./drive.sh fmt {dir path OR ./...}
+$ ./drive.sh -e ./src/{project}/.env glide fmt {dir path OR ./...}
 ```
 
 #### run command
 ```bash
-$ ./drive.sh run {file path}
+$ ./drive.sh -e ./src/{project}/.env glide run {file path}
 ```
 
 #### test command
 ```bash
-$ ./drive.sh test {dir path OR ./...}
+$ ./drive.sh -e ./src/{project}/.env glide test {dir path OR ./...}
 ```
 
 #### installMac command
 ```bash
-$ ./drive.sh installMac {dir path OR ./...}
+$ ./drive.sh -e ./src/{project}/.env glide installMac {dir path OR ./...}
 ```
 
 #### installLinux command
 ```bash
-$ ./drive.sh installLinux {dir path OR ./...}
+$ ./drive.sh -e ./src/{project}/.env glide installLinux {dir path OR ./...}
 ```
 
 #### installWindow command
 ```bash
-$ ./drive.sh installWindow {dir path OR ./...}
+$ ./drive.sh -e ./src/{project}/.env glide installWindow {dir path OR ./...}
 ```
 
 #### glide command
 ```bash
-$ ./vendor.sh glide {command}
+$ ./vendor.sh -e ./src/{project}/.env glide {command}
 ```
 
 #### glide init command
 ```bash
-$ ./vendor.sh init
+$ ./vendor.sh -e ./src/{project}/.env init
 ```
 
 #### glide get command
 ```bash
-$ ./vendor.sh get {url}
+$ ./vendor.sh -e ./src/{project}/.env get {url}
 ```
 
 #### glide install command
 ```bash
-$ ./vendor.sh install
+$ ./vendor.sh -e ./src/{project}/.env install
 ```
 
 #### glide list command
 ```bash
-$ ./vendor.sh list
+$ ./vendor.sh -e ./src/{project}/.env list
 ```
 
 #### glide update command
 ```bash
-$ ./vendor.sh update
+$ ./vendor.sh -e ./src/{project}/.env update
 ```
 
 #### glide rebuild command
 ```bash
-$ ./vendor.sh rebuild
+$ ./vendor.sh -e ./src/{project}/.env rebuild
 ```
 
 #### glide help command
 ```bash
-$ ./vendor.sh help
+$ ./vendor.sh -e ./src/{project}/.env help
 ```
 
 ## Point
@@ -95,8 +95,8 @@ $ ./vendor.sh help
 1. change .env.example to .env
 2. add PROJECT_NAME in .env
 3. PROJECT_NAME is ./src/{project(include main.go) folder name}
-4. init glide
+4. move .env to your project folder
+5. init dep and have -e environment parameters
 ```bash
-$ ./vendor.sh init
-```
+$ ./vendor.sh -e ./src/{project}/.env init
 
